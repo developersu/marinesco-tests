@@ -1,0 +1,119 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "libraryId": {
+          "type": "integer"
+        },
+        "libraryVersion": {
+          "type": "string"
+        },
+        "authors": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "authorName": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "authorName"
+              ]
+            }
+          ]
+        },
+        "genres": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "genreId": {
+                  "type": "string"
+                },
+                "humanReadableDescription": {
+                  "type": ["string", "null"]
+                }
+              },
+              "required": [
+                "genreId",
+                "humanReadableDescription"
+              ]
+            }
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "series": {
+          "type": "string"
+        },
+        "serNo": {
+          "type": "string"
+        },
+        "fsFileName": {
+          "type": "string"
+        },
+        "fileSize": {
+          "type": "integer"
+        },
+        "fileSizeForHumans": {
+          "type": "string"
+        },
+        "libId": {
+          "type": "string"
+        },
+        "deleted": {
+          "type": "string"
+        },
+        "fileExtension": {
+          "type": "string"
+        },
+        "addedDate": {
+          "type": "string"
+        },
+        "container": {
+          "type": "string"
+        },
+        "position": {
+          "type": "integer"
+        },
+        "line": {
+          "type": ["string", "null"]
+        }
+      },
+      "required": [
+        "id",
+        "libraryId",
+        "libraryVersion",
+        "authors",
+        "genres",
+        "title",
+        "series",
+        "serNo",
+        "fsFileName",
+        "fileSize",
+        "fileSizeForHumans",
+        "libId",
+        "deleted",
+        "fileExtension",
+        "addedDate",
+        "container",
+        "position",
+        "line"
+      ]
+    }
+  ]
+}

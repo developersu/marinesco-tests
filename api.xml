@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ru.redrise.api">
+    <test verbose="2" preserve-order="true" name="API tests">
+
+        <classes>
+            <class name="ru.redrise.api.AuthorsApiTest" />
+            <class name="ru.redrise.api.BooksApiTest" />
+            <class name="ru.redrise.api.GenresApiTest" />
+
+            <!--
+            <class name="ru.redrise.api.ExampleOnly" />
+            -->
+        </classes>
+    </test>
+</suite>

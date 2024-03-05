@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UI Tests">
+<!--
+    <listeners>
+        <listener class-name="ru.redrise.ReportListener" />
+    </listeners>
+-->
+    <test verbose="2" preserve-order="true" name="UI tests">
+        <parameter name="admin_username" value="root"/>
+        <parameter name="admin_password" value="root"/>
+
+        <parameter name="not_being_registered_login" value="imnotregistered"/>
+        <parameter name="test_user_login" value="test-user"/>
+        <parameter name="test_user_password" value="hereisthetextuserpassword"/>
+        <parameter name="test_user_displayedname" value="Test User Name"/>
+
+        <classes>
+            <class name="ru.redrise.users_management.Suite" />
+            <class name="ru.redrise.users_management.LoginTest" />
+            <class name="ru.redrise.users_management.RegistrationAllowTest" />
+            <class name="ru.redrise.users_management.RegistrationTest" />
+        </classes>
+    </test>
+</suite>
